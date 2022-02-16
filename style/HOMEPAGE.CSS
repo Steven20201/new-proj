@@ -27,6 +27,7 @@ body {
 
 .container {
     min-height: 100%;
+    line-height: 30px;
 }
 
 .side-content h2 {
@@ -226,6 +227,7 @@ nav {
   }
   nav.nav-open {
     transform: translateX(0%);
+    position: fixed;
   }
   nav.nav-open .menu-btn {
     right: 10%;
@@ -353,7 +355,7 @@ h1.maintit {
 .container .about-game{
     margin: 10px 0;
     padding: 10px;
-    line-height: 30px;
+    line-height: 35px;
 }
 
 .container .about-game h4 {
@@ -383,7 +385,6 @@ transform: scale(1.3);
 }
 
 .features-content {
-  border: 2px solid #000;
   margin: 10px;
   border-radius: 20px;
 }
@@ -418,6 +419,7 @@ img.g {
   padding: 15px;
 }
 
+
 /*table*/
 
 
@@ -436,10 +438,10 @@ img.g {
 /*end of table*/
 
 .upcomming img{
-  width: 500px;
-  margin: 10px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  width: 300px;
+  border-radius: 20px;
+  display: block;
+  margin: 10px auto;
 }
 
 .upcomming h3 {
@@ -449,7 +451,6 @@ img.g {
 }
 
 .upcomming {
-  border: 1px solid #000;
   margin: 10px;
   border-radius: 20px;
 }
@@ -479,12 +480,12 @@ img.g {
 }
 
 .gt-text .fa{
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 50%;
     text-align: center;
-    line-height: 60px;
-    width: 60px;
-    height: 60px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
     color: #000;
     background: rgb(158, 224, 4);
     margin-top: 10px;
@@ -497,6 +498,8 @@ img.g {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 15px;
     margin-top: 11px;
+    font-size: 14px;
+    padding-left: 65px;
 }
 
 .footer .footer-content .about img {
@@ -555,27 +558,26 @@ img.g {
 }
 
 .footer .footer-content .socials {
-    margin-top: 20px;
     margin-left: 10px;
+    padding: 10px 0;
 }
 
 .footer .footer-content .socials .fa{
     color: blue;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
+    line-height: 36px;
     font-size: 20px;
     background-color: #fff;
-    margin-right: 15px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
 .footer .footer-content .socials a {
     text-decoration: none;
-    padding: 5px;
-    font-size: 34px;
+    font-size: 30px;
 }
 
 .footer .footer-content .email h3 {
@@ -713,6 +715,10 @@ form button .fa {
     height: 550px;
 }
 
+.footer .footer-content .socials a {
+  padding: 9px;
+}
+
   .main-content {
     border: 1px solid #000;
     margin: 10px;
@@ -741,7 +747,100 @@ form button .fa {
   "main side"
   "feature side";
 }
+
+.footer .footer-content .socials a {
+  padding: 20px;
+  margin: 10px;
+}
+
+.footer .footer-content .socials .fa:hover {
+ /*dfsd*/
+}
 }
 /*end of the media*/
 /*end of home Page*/
 
+/*characteristic.html*/
+  .cont {
+    padding: 10px 20px;
+  }
+
+  .cont .typeofhero {
+    border-bottom: 1px solid #000;
+    line-height: 30px;
+  }
+
+  .cont .typeofhero h1.bold{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 10px;
+
+  }
+.cont .heroes table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+th,td {
+  text-align: center;
+  padding: 6px;
+}
+
+tr:nth-child(even){
+  background-color: #0c67f0;
+}
+
+.heroes th {
+  cursor: pointer;
+}
+
+.sortable-table thead th:after{
+  padding-left:7px}
+
+  .sortable-table td {
+    text-align: center;
+    border: 1px solid #000;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.sortable-table thead th[data-sort-direction="1"]:after{content:"\25B4"}
+.sortable-table thead th[data-sort-direction="-1"]:after{content:"\25BE"}
+.sortable-table.sortable-fa-icons thead th:after{font-family:FontAwesome}
+
+.sortable-table.sortable-fa-icons thead th[data-sort-direction="1"]:after{content:"\f0de"}
+.sortable-table.sortable-fa-icons thead th[data-sort-direction="-1"]:after{content:"\f0dd"}
+
+
+  .cont .typeofhero p.text a{
+    text-decoration: none;
+    color: #000;
+  }
+
+.listofhero h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.listofhero p {
+  padding: 20px 10px;
+}
+
+.cont .heroes .sortable-table thead tr th{
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+
+}
+.cont .heroes .sortable-table tbody tr td a {
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+
+  color: #000;
+}
+
+.sortable-table thead {
+  background-color: rgb(99, 228, 13);
+}
+/*End of Character Page*/
