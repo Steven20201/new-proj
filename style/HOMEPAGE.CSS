@@ -746,7 +746,30 @@ form button .fa {
 }
 
 @media screen and (min-width:900px) {
+.conn {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 15px;
+  grid-template-areas: 
+  "cont sideco";
+  }
 
+  .conn .side-cont {
+  padding: 20px 20px;
+  }
+
+  .conn .side-cont h2 {
+    font-size: 16px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .conn .side-cont .carto a img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
   figure{
     margin: 10px ;
     border-radius: 20px;
@@ -823,6 +846,8 @@ form button .fa {
 .footer .footer-content .socials .fa:hover {
  /*dfsd*/
 }
+
+
 }
 /*end of the media*/
 /*end of home Page*/
@@ -830,6 +855,7 @@ form button .fa {
 /*characteristic.html*/
   .cont {
     padding: 10px 20px;
+    grid-area: cont;
   }
 
   .cont .typeofhero {
@@ -908,5 +934,34 @@ th,td {
 .sortable-table thead {
   background-color: rgb(51, 53, 50);
   color: #fff;
+}
+
+.carto {
+  padding: 10px;
+}
+
+.side-cont {
+padding: 10px;
+grid-area: sideco;
+}
+
+.carto a {
+  text-decoration: none;
+  display: flex;
+  color: #000;
+}
+
+.carto span {
+  display: block;
+  margin: auto 0;
+  margin-left:30px;
+  font-size: 20px;
+}
+
+.carto img{
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  border: 5px solid rgb(0, 0, 0);
 }
 /*End of Character Page*/
