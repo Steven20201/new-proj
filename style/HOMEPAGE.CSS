@@ -788,7 +788,7 @@ th,td {
 }
 
 tr:nth-child(even){
-  background-color: #0c67f0;
+  background-color: #606469;
 }
 
 .heroes th {
@@ -841,6 +841,7 @@ tr:nth-child(even){
 }
 
 .sortable-table thead {
-  background-color: rgb(99, 228, 13);
+  background-color: rgb(51, 53, 50);
+  color: #fff;
 }
 /*End of Character Page*/
