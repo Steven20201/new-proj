@@ -3,7 +3,6 @@
     box-sizing: border-box;
     font-family: 'Bree Serif', serif;
     margin: 0;
-    padding: 0;
 font-family: 'Open Sans', sans-serif;
 }
 
@@ -795,7 +794,7 @@ form button .fa {
   }
 /*End of main content*/
 
-  .tank-cont {
+  .tank-cont, .fighter-whole {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: auto 1fr;
@@ -805,19 +804,19 @@ form button .fa {
     "takmai lasttank";
     }
 
-    .tank-cont .tank-main {
+    .tank-cont .tank-main, .fighter-whole .fighter-main {
       grid-area: takmai;
     }
 
-    .tank-cont .side-link {
+    .tank-cont .side-link, .fighter-whole .side-link {
       grid-area: takside;
     } 
     
-    .tank-cont .last-tank {
+    .tank-cont .last-tank, .fighter-whole .last-tank {
       grid-area: lasttank;
     }
 
-    .tank-cont .side-link .tank-link a img{
+    .tank-cont .side-link .tank-link a img, .fighter-whole .side-link .fighter-link a img{
       width: 150px;
     }
 
@@ -1019,7 +1018,7 @@ grid-area: sideco;
   font-weight: bold;
 }
 
-.tank-cont .tank-main .tank-text ul {
+.tank-cont .tank-main .tank-text ul, .fighter-whole .fighter-main .fighter-hero .fight-body .fight-bodth .fighter-adv ol{
  padding: 10px; 
 }
 
@@ -1039,14 +1038,14 @@ grid-area: sideco;
   padding: 10px ;
 }
 
-.tank-cont .tank-main .tank-adv {
+.tank-cont .tank-main .tank-adv, .fighter-whole .fighter-main .fighter-hero .fight-body .fight-bodth .fighter-adv{
  border-top: 1px solid #000;
  border-bottom: 1px solid #000;
  line-height: 35px;
  padding: 10px;
 }
 
-.tank-cont .tank-main .tank-adv h2 {
+.tank-cont .tank-main .tank-adv h2, .fighter-whole .fighter-main .fighter-hero .fight-body .fight-bodth .fighter-adv h2{
   padding: 10px 0;
 }
 
@@ -1066,31 +1065,31 @@ grid-area: sideco;
   text-align: center;
 }
 
-.tank-cont .side-link .tank-link img {
+.tank-cont .side-link .tank-link img, .fighter-whole .side-link .fighter-link a img {
   width: 200px;
   border-radius: 20px;
   border: 2px solid #000;
   margin: 10px;
 } 
 
-.tank-cont .side-link .tank-link span {
+.tank-cont .side-link .tank-link span,  .fighter-whole .side-link .fighter-link a span{
   display: block;
   margin:  auto 0;
   padding-left:15px ;
 }
 
-.tank-cont .last-tank h2 {
+.tank-cont .last-tank h2, .fighter-whole .last-fighter h2 {
   text-align: center;
   padding: 20px 10px;
 }
 
-.tank-cont .last-tank img {
+.tank-cont .last-tank img, .fighter-whole .last-fighter img{
     width: 300px;
     display: block;
     margin: 0 auto;
 }
 
-.tank-cont .last-tank span {
+.tank-cont .last-tank span, .fighter-whole .last-fighter span{
   text-align: center;
   font-size: 17px;
   font-weight: bold;
@@ -1098,8 +1097,9 @@ grid-area: sideco;
   display: block;
 }
 
-.tank-cont .side-link .tank-link a {
-  text-decoration: none;display: flex;
+.tank-cont .side-link .tank-link a, .fighter-whole .side-link .fighter-link a {
+  text-decoration: none;
+  display: flex;
   color: #000;
 }
 /*End of tank Page*/
