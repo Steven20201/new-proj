@@ -797,11 +797,12 @@ form button .fa {
 
   .tank-cont {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto 1fr;
     grid-gap: 15px;
     grid-template-areas: 
-    "takmai takside";
+    "takmai takside"
+    "takmai lasttank";
     }
 
     .tank-cont .tank-main {
@@ -811,9 +812,13 @@ form button .fa {
     .tank-cont .side-link {
       grid-area: takside;
     } 
+    
+    .tank-cont .last-tank {
+      grid-area: lasttank;
+    }
 
     .tank-cont .side-link .tank-link a img{
-      width: 200px;
+      width: 150px;
     }
 
   .footer{
@@ -990,25 +995,22 @@ grid-area: sideco;
 /*End of Character Page*/
 
 /*tank Page*/
-.tank-cont .tank-main .tank-text img {
+.tank-cont .tank-main .tank-text img, .fighter-whole .fighter-main .fighter-ass img {
   padding: 10px;
   margin: 0 auto;
   display: block;
   border-radius: 10px;
+   width: 300px;
 }
 
-.tank-cont .tank-main .tank-text h3 {
+.tank-cont .tank-main .tank-text h3, .fighter-whole .fighter-main .fighter-ass h2{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px;
   text-align: center; 
 }
 
-.tank-cont .tank-main .tank-text img{
-  width: 300px;
-  
-}
-.tank-cont .tank-main .tank-text p.text {
+.tank-cont .tank-main .tank-text p.text,.fighter-whole .fighter-main .fighter-ass p.text {
   padding: 10px;
   line-height: 25px;
 }
@@ -1030,7 +1032,7 @@ grid-area: sideco;
   padding: 15px 0;
 }
 
-.tank-main .tank-hero .tank-body {
+.tank-main .tank-hero .tank-body, .fighter-main .figher-hero .fight-body .fight-bodth .fighter-body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -1048,36 +1050,28 @@ grid-area: sideco;
   padding: 10px 0;
 }
 
-.tank-main .tank-hero .tank-body #tank0{
+.tank-main .tank-hero .tank-body #tank0,.fighter-main .figher-hero .fight-body .fight-bodth .fighter-body .fighter-it #fight{
   width:7em;
   padding: 10px;
-  margin: 10px;
+  margin: 10px;border-radius: 50%;
 }
 
-.tank-main .tank-hero .tank-body .tank-it {
+.tank-main .tank-hero .tank-body .tank-it, .fighter-main .figher-hero .fight-body .fight-bodth .fighter-body .fighter-it{
   display: flex;
   padding-right: 10px;
   flex-direction: column;
 }
 
-.tank-main .tank-hero .tank-body .tank-it img {
-  border-radius: 50%;
-}
-
-.tank-main .tank-hero .tank-body .tank-it span {
+.tank-main .tank-hero .tank-body .tank-it span ,  .fighter-main .figher-hero .fight-body .fight-bodth .fighter-body .fighter-it span{
   text-align: center;
 }
 
-.tank-cont .side-link .tank-link {
-  
-}
-
 .tank-cont .side-link .tank-link img {
-  width: 250px;
+  width: 200px;
   border-radius: 20px;
   border: 2px solid #000;
   margin: 10px;
-}
+} 
 
 .tank-cont .side-link .tank-link span {
   display: block;
@@ -1085,9 +1079,32 @@ grid-area: sideco;
   padding-left:15px ;
 }
 
+.tank-cont .last-tank h2 {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.tank-cont .last-tank img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tank-cont .last-tank span {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  text-shadow: 3px slategray;
+  display: block;
+}
 
 .tank-cont .side-link .tank-link a {
   text-decoration: none;display: flex;
   color: #000;
 }
 /*End of tank Page*/
+
+/*Start of Fighter Page*/
+
+
+/*end of Fighter */
