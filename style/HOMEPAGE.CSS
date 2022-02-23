@@ -24,6 +24,9 @@ body {
     
   }
 
+  .nav-open ul.nav-items {
+    padding: 0;
+  }
 .container {
     min-height: 100%;
     line-height: 30px;
@@ -816,10 +819,7 @@ form button .fa {
       grid-area: lasttank;
     }
 
-    .tank-cont .side-link .tank-link a img, .fighter-whole .side-link .fighter-link a img{
-      width: 150px;
-    }
-
+  
   .footer{
     height: 550px;
 }
@@ -1009,16 +1009,16 @@ grid-area: sideco;
   text-align: center; 
 }
 
-.tank-cont .tank-main .tank-text p.text,.fighter-whole .fighter-main .fighter-ass p.text {
+.tank-cont .tank-main .tank-text p.text, .fighter-whole .fighter-main .fighter-ass p.text {
   padding: 10px;
-  line-height: 25px;
+  line-height: 35px;
 }
 
 .tank-cont .tank-main .tank-text .bold {
   font-weight: bold;
 }
 
-.tank-cont .tank-main .tank-text ul, .fighter-whole .fighter-main .fighter-hero .fight-body .fight-bodth .fighter-adv ol{
+.tank-cont .tank-main .tank-text ul, .fighter-whole .fighter-main .figher-hero .fight-body .fight-bodth .fighter-adv ol{
  padding: 10px; 
 }
 
@@ -1026,7 +1026,7 @@ grid-area: sideco;
   padding-bottom: 10px;
 }
 
-.tank-cont .tank-main .tank-hero .tank-tit h2 {
+.tank-cont .tank-main .tank-hero .tank-tit h2, .fighter-whole .fighter-main .figher-hero .fighter-tit h2{
   text-align: center;
   padding: 15px 0;
 }
@@ -1038,14 +1038,14 @@ grid-area: sideco;
   padding: 10px ;
 }
 
-.tank-cont .tank-main .tank-adv, .fighter-whole .fighter-main .fighter-hero .fight-body .fight-bodth .fighter-adv{
+.tank-cont .tank-main .tank-adv, .fighter-whole .fighter-main .figher-hero .fight-body .fight-bodth .fighter-adv{
  border-top: 1px solid #000;
  border-bottom: 1px solid #000;
  line-height: 35px;
  padding: 10px;
 }
 
-.tank-cont .tank-main .tank-adv h2, .fighter-whole .fighter-main .fighter-hero .fight-body .fight-bodth .fighter-adv h2{
+.tank-cont .tank-main .tank-adv h2, .fighter-whole .fighter-main .figher-hero .fight-body .fight-bodth .fighter-adv h2{
   padding: 10px 0;
 }
 
