@@ -875,34 +875,21 @@ form button .fa {
   "main side"
   "feature side";
 }
+.footer{
+  height: 550px;
+}
 
 .footer .footer-content .socials a {
-  padding: 20px;
-  margin: 10px;
+padding: 9px;
 }
-
-.footer .footer-content .socials .fa:hover {
- /*dfsd*/
-}
-
 
 .pro .mainvssid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: auto auto;
-  grid-gap: 15px;
-  grid-template-areas: 
-  'hidey maain'
-  ;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
 
-.pro .mainvssid .sideba {
-  grid-area: hidey;
-}
 
-.pro .mainvssid .maain {
-  grid-area: maain;
-}
 
 .pro .mainvssid .sideba ol#Name li a{
   
@@ -1169,7 +1156,7 @@ grid-area: sideco;
   display: block;
   margin: 0 auto;
   padding: 20px;
-  width: 300px;
+  width: 100%;
 }
 
 .pro .revemp {
@@ -1223,4 +1210,11 @@ grid-area: sideco;
 .pro .mainvssid .maain #Miyarev #Miya-rev-text, .pro .mainvssid .maain #saber #Saber-rev-text,.pro .mainvssid .maain #Eudora #Eudora-rev-text,.pro .mainvssid .maain #zilong #Zilong-rev-text, .pro .mainvssid .maain #Layla #layla-rev-text, .pro .mainvssid .maain #Alucard #Alucard-rev-text {
   line-height: 2.5em;
 }
+
+.w3-bar .w3-button {
+  padding: 10px 26.75px !important;
+}
+
 /*end of project-Next */
+
+
